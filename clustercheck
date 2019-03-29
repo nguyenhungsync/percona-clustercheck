@@ -16,7 +16,7 @@ if [ -f /etc/sysconfig/clustercheck ]; then
 fi
 
 MYSQL_USERNAME="${MYSQL_USERNAME-clustercheckuser}"
-MYSQL_PASSWORD="${MYSQL_PASSWORD-clustercheckuser!}"
+MYSQL_PASSWORD="${MYSQL_PASSWORD-clustercheck}"
 MYSQL_HOST=`hostname -i`
 MYSQL_PORT="${MYSQL_PORT:-3306}"
 ERR_FILE="${ERR_FILE:-/dev/null}"
